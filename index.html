@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+ <script src="script.js" defer></script>
+ <title>Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main-heading">
+     <h1 id="calcHeading">calc</h1>
+     <div class="theme">
+      <label id="themeLabel" for="themeBtn">THEME</label>
+      <button class="themeBtn"><span id="spanCircle"></span></button>
+     </div>
+    </div>
+    <div class="container-result">
+     <input type="text" id="result">
+    </div>
+    <div class="container-keypad">
+     <button onclick="result.value += value" value=7 id="seven">7</button>
+     <button onclick="result.value += value"  value=8 id="eight">8</button>
+     <button onclick="result.value += value" value=9 id="nine">9</button>
+     <button onclick="result.value = result.value.slice(0, -1)" id="delete">DEL</button>
+     <button onclick="result.value += value" value=4 id="four">4</button>
+     <button onclick="result.value += value" value=5 id="five">5</button>
+     <button onclick="result.value += value" value=6 id="six">6</button>
+     <button onclick="result.value += value" value=+ id="plus">+</button>
+     <button onclick="result.value += value" value=1 id="one">1</button>
+     <button onclick="result.value += value" value=2 id="two">2</button>
+     <button onclick="result.value += value" value=3 id="three">3</button>
+     <button onclick="result.value += value" value=- id="minus">-</button>
+     <button onclick="result.value += value" value=. id="dot">.</button>
+     <button onclick="result.value += value" value=0 id="zero">0</button>
+     <button onclick="result.value += value" value=/ id="slash">/</button>
+     <button onclick="result.value += value" value=* id="times">x</button>
+     <button onclick="result.value = value" value=" " id="reset">RESET</button>
+     <button onclick="result.value = eval(result.value)" id="equals">=</button>
+    </div>
+  </div>
+</body>
+</html>

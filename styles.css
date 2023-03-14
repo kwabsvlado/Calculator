@@ -1,0 +1,354 @@
+* {
+  font-family: "League Spartan", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.theme {
+  align-items: center;
+  display: flex;
+}
+
+.theme label{
+  font-size: .8rem;
+}
+
+.themeBtn {
+  width: 60px;
+  height: 3vh;
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  background-color: hsl(224, 36%, 15%);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0.8rem 0.4rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.theme button span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+  cursor: pointer;
+}
+
+.container-result {
+  height: 13vh;
+  border-radius: 10px;
+  background-color: hsl(224, 36%, 15%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container-result h1 {
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+#result{
+  font-size: 2.2rem;
+  margin-left: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.container-keypad {
+  height: 40vh;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  padding: 2rem 2rem;
+  justify-items: center;
+}
+
+
+
+#reset {
+  grid-area: 5 / 1 / 6 / 3; 
+  width: 88%; 
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 2px hsl(224, 28%, 35%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+#equals {
+  grid-area: 5 / 3 / 6 / 5;
+  width: 88%;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 6px 2px hsl(6, 70%, 34%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+
+#delete{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 2px hsl(224, 28%, 35%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+
+#reset:hover, #delete:hover{
+  background-color:hsl(224, 28%, 65%)
+}
+
+#equals:hover{
+  background-color: hsl(6, 70%, 67%);
+}
+
+.container-keypad button {
+  width: 90%;
+  height: 5vh;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 2px 2px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .1s
+}
+
+.container-keypad button:hover{
+  background-color:hsl(0, 0%, 100%)
+}
+
+.theme1{
+  justify-content: left;
+
+}
+
+.theme2{
+  justify-content: center;
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme3{
+  justify-content: right;
+  background-color: hsl(268, 71%, 12%);
+}
+
+@media (max-width: 375px){
+  * {
+  font-family: "League Spartan", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.theme {
+  align-items: center;
+  display: flex;
+}
+
+.theme label{
+  font-size: .8rem;
+}
+
+.themeBtn {
+  width: 60px;
+  height: 3vh;
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  background-color: hsl(224, 36%, 15%);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0.8rem 0.4rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.theme button span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+  cursor: pointer;
+}
+
+.container-result {
+  height: 13vh;
+  border-radius: 10px;
+  background-color: hsl(224, 36%, 15%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.container-result h1 {
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
+
+#result{
+  font-size: 2.2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.container-keypad {
+  background-color: hsl(223, 31%, 20%);
+  height: 50vh;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  padding: 2rem 2rem;
+  justify-items: center;
+}
+
+
+
+#reset {
+  grid-area: 5 / 1 / 6 / 3; 
+  width: 88%; 
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 2px hsl(224, 28%, 35%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+#equals {
+  grid-area: 5 / 3 / 6 / 5;
+  width: 88%;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0 6px 2px hsl(6, 70%, 34%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+
+#delete{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0 4px 2px hsl(224, 28%, 35%);
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: .1s;
+}
+
+#reset:hover, #delete:hover{
+  background-color:hsl(224, 28%, 65%)
+}
+
+#equals:hover{
+  background-color: hsl(6, 70%, 67%);
+}
+
+.container-keypad button {
+  width: 90%;
+  height: 7vh;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0 2px 2px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .1s
+}
+
+.container-keypad button:hover{
+  background-color:hsl(0, 0%, 100%)
+}
+
+.theme1{
+  justify-content: left;
+
+}
+
+.theme2{
+  justify-content: center;
+  background-color: hsl(0, 5%, 81%);
+}
+
+.theme3{
+  justify-content: right;
+  background-color: hsl(268, 71%, 12%);
+}
+}
